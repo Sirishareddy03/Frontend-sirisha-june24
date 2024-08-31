@@ -1,0 +1,22 @@
+<html>
+<head>
+</head>
+<body>
+<h2>welcome to application</h2>
+<form action="Images.html>
+<label for="username">username :</label>
+<input type="text" name="uname" id="uname" value="siri" placeholder="enter username"><br><br>
+<label for="pass">password :</label>
+<input type="password" name="pwd" id="pass" placeholder="enter your password"><br><br>
+<label for="email">Email :</label>
+<input type="email" name="email" id="email" placeholder="enter your email"><br><br>
+<label for="phone">phone number :</label>
+<input type="tel" name="phone" id="phone" placeholder="enter your mobile number"><br><br>
+<label for="gender>gender :</label>
+<input type="radio" name="male" id="male">
+<input type="radio" name="female" id="female">
+<input type="radio" name="others" id="others"> 
+
+</form>
+</body>
+</html>
