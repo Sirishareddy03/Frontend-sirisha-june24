@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .parent{
+        display: grid;
+        height: 95vh;
+        grid-template-columns: 30% 30% 35%;
+        grid-template-rows:  10% 10% 40%;
+        margin: 100px;
+        padding: 20px;
+        grid-gap: 10px;
+        text-align: center;
+       } 
+       .ch1{
+        background-color: blue;
+        grid-column-start: 1;
+        grid-column-end: 4 ;
+        
+       }
+       .ch2{
+        background-color: rgb(94, 255, 0);
+        grid-column-start: 1;
+        grid-column-end: 3;
+        
+       
+       }
+       .ch3{
+        background-color: rgb(255, 0, 179);
+        grid-column-start:1 ;
+        grid-column-end: 2;
+       }
+       .ch4{
+        background-color: rgb(187, 21, 248);
+        grid-column-start: 2;
+        grid-column-end: 3;
+        
+        
+       }
+       .ch5{
+        background-color: rgb(192, 238, 24);
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+       }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="ch1">HEADER</div>
+        <div class="ch2">SEARCH</div>
+        <div class="ch3">LEFT SIDEBAR</div>
+        <div class="ch4">MIDDLE</div>
+        <div class="ch5">RIGHT SIDEBAR</div>
+    </div>
+</body>
+</html>

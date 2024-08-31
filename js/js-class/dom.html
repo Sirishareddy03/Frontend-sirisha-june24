@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <style>
+      .hello{
+        background-color: aquamarine;
+        border: 2px solid orchid;
+      }
+      .b{
+        color:green
+      }
+    </style>
+</head>
+<body>
+    <h1 id="demo">welcome to india
+    </h1>
+    <p class="fam">paragraph-1</p>
+    <p class="fam">paragraph-2</p>
+    <p class="dev">paragraph-3</p>
+    <p class="dev">paragraph-4</p>
+    <script>
+        var demo=document.getElementById("demo")
+      //  console.log(demo)
+        var fam=document.getElementsByClassName("fam")
+      //  console.log(fam)
+        var dev=document.getElementsByClassName("dev")
+      //  console.log(dev)
+        var para=document.getElementsByTagName("p")
+      //  console.log(para)
+        var fires=document.querySelector("#demo")
+     //   console.log(fires)
+        var all=document.querySelectorAll(".fam")
+        console.log(all)
+        var dis=document.getElementById("demo")
+       // dis.innerHTML="welcome to usa"
+       //dis.innerText="welcome to abroad"
+      // dis.textContent="welcome to js"
+      //console.log(dis.textContent)// it will takes line breaks in console
+      //console.log(dis.innerText)// same exactly display as
+      var bg=document.getElementById("demo")
+     // bg.style.backgroundColor="red"
+      //bg.style.color="white"
+      //bg.classList.add("hello","b")
+      //bg.classList.remove("b")
+   /*-----------------------------------------------------------------dom manipulation----------------------------------------*/
+ 
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <h3>function is the loaction where we can write our logic to perform some action or collection of statements </h3>
+    <script>
+        //normal funtion
+        function sleep()
+        {
+            document.write("hello world....."+"<br>")
+        }
+      /*  sleep();
+        sleep();
+        sleep();
+        sleep();*/
+
+//function with parameters
+function addition(a,b)
+{
+    document.write("addition of two number "+(a+b)+"<br>");
+}
+/*addition(23,50);
+addition(123,150);
+addition(223,250);*/
+function welcome()
+{
+    return "Good Morning.......";
+}
+//document.write(welcome());
+function multi(a,b)
+{
+    return(a*b);
+}
+
+//document.write(multi(12,34));
+
+/*-------------------------------function expression------------------------*/
+let substraction=function sub(a,b)
+{
+    document.write("sub of two is :"+(a-b)+"<br>");
+}
+//substraction(12,89)
+/*------------------------------anonymous function----------------------------*/
+ let full=function(firstName,lastName)
+ {
+    let fullName=firstName+lastName;
+    document.write("My Nmae is  :"+fullName+"<br>")
+ }
+ //full("bahubali","amarendra")
+ //full("devasene","deva")
+ //full("kattapa","kalakeya")
+ let Demo=()=>
+ {
+    document.write("hello world!");
+ }
+ //Demo();
+ let wel=(name)=>
+{
+    document.write("hello world"+name+"<br>");
+}
+//wel("sathya");
+/*-----------------------------------iife---------------*/
+(
+    function Hello()
+    {
+        document.write("welcome to iif function")
+    }
+)
+//();
+/*----------------------------scope-----------------------------*/
+function scopes()
+{
+    var add="USA";
+    document.write("welcome to :"+add)
+}
+//scopes();
+
+var add="USA";
+function scopes()
+{
+    //local scope
+    document.write("welcome to:1"+add)
+}
+//scopes();
+//document.write("welcome to:2 :"+add)
+/**************************************default parameter function*********************/
+ function dee(name="devasena")
+ {
+    document.write("welcome to:"+name);
+
+ }//dee("bahubali");
+ function dee(name="devasena")
+ {
+    document.write("welcome to:"+name+"<br>");
+
+ }dee();
+ dee("bahubali");
+
+    </script>
+</body>`
+</html>

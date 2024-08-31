@@ -1,0 +1,38 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    padding: 0%;
+    background-color: skyblue;
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+}
+form{
+    text-align: center;
+    margin-top: 20px;
+}
+table{
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: antiquewhite;
+}
+table,th,td{
+    border: 1px solid black;
+}
+th,td{
+    padding: 10px;
+    text-align: left;
+}
+button{
+    padding: 5px 10px;
+    background-color: blueviolet;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    background-color: bisque;
+    
+}

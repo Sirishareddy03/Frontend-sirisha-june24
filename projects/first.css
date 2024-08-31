@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: antiquewhite;
+    margin: 0;
+}
+.container{
+    height: 50px;
+    width: 100px;
+    border:2px solid black;
+    position: relative;
+    border-radius: 25px;
+    background-color: rgb(90, 239, 114);
+}
+.toggle
+{
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: pink;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.toggle.on{
+ left: 50px;
+ background-color: rgb(245, 128, 202);
+}

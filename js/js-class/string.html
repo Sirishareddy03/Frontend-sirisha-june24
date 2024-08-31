@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string</title>
+</head>
+<body>
+    <script>
+        let res="welcome";
+        let res1='welcome';
+        let res2="welcome to 'india'"
+        let res3='welcome to "india"'
+        console.log(res)
+        console.log(res1)
+        console.log(res2)
+        console.log(res3)
+        let res4="C:\\users\\hp\\desktop\\satya\\frondend"
+        console.log(res4)
+        console.log(res2.length)
+        console.log(res3.length)
+        console.log(res2.indexOf("to"))
+
+
+        let str="Color red looks good than color blue"
+
+        let pos1=str.search("color")
+        console.log(pos1)
+        
+        let pos2=str.search("/color/i")
+        console.log(pos2)
+
+        let str2="the fox eating little bit brown suger"
+        console.log(str2.slice(4,8))
+        console.log(str2.slice(-8,-4))
+        console.log(str2.slice(2))
+
+        let str3="the fox eating little bit brown suger"
+        console.log(str2.substring(4,8))
+        console.log(str2.substring(-8,-4))
+        console.log(str2.substring(2))
+
+        let str4="the fox eating little bit brown suger"
+        console.log(str2.substr(4,8))
+        console.log(str2.substr(-8,-4))
+        console.log(str2.substr(2))
+
+        let str5="Color red looks good than color blue"
+        console.log(str5.replace("color","hello"))
+        console.log(str5.replace(/color/i,"hello"))
+
+        let str6="sathya soma"
+        let str7="PRAKASH SOMA"
+
+        console.log(str6.toUpperCase())
+        console.log(str7.toLowerCase())
+
+        let hello="Hello"
+        let world="World"
+
+        let greet=hello+world
+        console.log(greet)
+
+        let wish="happy"
+        wish+="new year"
+        console.log(hello.charAt(0))
+        console.log(hello.charAt(3))
+        console.log(hello.charAt(6))
+
+        let str8="Color red looks good than color blue"
+
+        let strs=str8.split(",")
+        console.log(strs)
+        console.log(strs[1])
+        console.log(strs[3])
+    </script>
+</body>
+</html>

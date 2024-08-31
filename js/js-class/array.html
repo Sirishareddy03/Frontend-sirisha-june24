@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrays</title>
+</head>
+<body>
+    <script>
+        var arr=[] //littera way
+        console.log(arr);
+        console.log(typeof(arr));
+        console.log(Array.isArray(arr))//true
+
+
+        var arr1="welcome"
+        console.log(Array.isArray(arr1));//false
+
+        var res=new Array(); //constructor way
+        console.log(res);
+        console.log(typeof(res))
+        console.log(Array.isArray(res))
+
+
+        const number=[1,2,3,4,5,6,7,8,9]
+        const names=["bahubali","devasena","kattappa","kalakeya"]
+        const fruits=["apple","banana","orange"]
+        const mix=[1,2,3,"apple.orange",true,90.78,{},function(){}]
+
+        console.log(number);
+        
+        var res1=new Array(1,2,3,4,5,6,7,8,9)
+        console.log(res1)
+        console.log("length is:"+number,length);
+        console.log("index length :"+(number.length-1))
+
+        //accessing the data by using index locations
+
+        console.log(" value is :"+number[0])//1
+        console.log(" value is :"+number[5])
+        console.log(" value is :"+number[8])
+        console.log(" value is :"+number[10])
+
+        //iteartion of data
+
+        for(let i=0;i<number.length;i++)
+    {
+        console.log("value is :"+i)
+    }
+
+    for(let i=0;i<number.length;i++)
+    {
+        console.log("value is :"+number[i])
+    }
+   
+    // for loop
+
+        console.log("by using for loop..")
+        for( let i=0;i<names.length;i++)
+    {
+        console.log("value is: "+names[i])
+    }
+    
+    // while loop
+    console.log("by using while loop..")
+     
+    let i=0;
+    while(i<names.length)
+    {
+        console.log("value is:"+names[i])
+        i++
+    }
+
+    // for-of loop
+    console.log("by using for-of loop....")
+
+    for(let name of names)
+    {
+        console.log("value is"+name)
+    }
+
+    // for-in loop
+    console.log("by using for-in loop")
+
+    for(let n in names)
+    {
+        console.log("value is "+n)
+    }
+
+    for(let n in names)
+    {
+        console.log("value is "+names[n])
+    }
+
+    // for-each loop
+    console.log("by using for-each loop")
+
+    names.forEach(
+        function(element,index)
+        {
+            console.log(`${index}:${element}`)
+        }
+    )
+
+    // insering elements into tha array
+
+    const fruits1=["apple","banana","orange"]
+    
+    //unshift()-->begining of the array
+    //push()-->insert into end of the array
+    console.log(fruits1);
+    fruits1.push("watermilan")
+    console.log(fruits1)
+    fruits1.unshift("mango");
+    console.log(fruits1)
+
+    // removing elements from the array: shift(),pop()
+    // shift()--->begining of the array
+    // pop()---->ending of the array
+    console.log(fruits1);
+    fruits1.pop("watermilan")
+    console.log(fruits1)
+    fruits1.shift("mango");
+   console.log(fruits1)
+
+// splice method (indexlocation,removing elements,"add any elements")
+
+fruits1.splice(1,1);
+console.log(fruits1)
+fruits1.splice(1,1,"sapota","piapple","kiwi");
+console.log(fruits1)
+
+//slice (startindex,endindex) method
+
+let result=fruits1.slice(1,3)
+console.log(result)
+
+// converting array to stringformat
+let colors=["red","green","blue","yellow"]
+console.log(colors)
+console.log(colors.toString())
+
+
+// join method
+
+console.log(colors.join())
+console.log(colors.join(""))
+console.log(colors.join("-"))
+console.log(colors.join("_"))
+
+let values=["A","B","C","D"]
+let animals=["dog","cat","rat"]
+
+let results=colors.concat(values,animals)
+
+console.log(colors.indexOf("red"))
+console.log(colors.lastIndexOf("red"))
+console.log(results)
+
+let arr8=[1,0,3,5,false,8,3]
+console.log(arr8.includes(13))
+
+let valls=arr8.find(
+    function(e)
+    {
+        return e>5
+    }
+)
+console.log(valls)
+
+let valls1=arr8.findIndex(
+    function(el)
+    {
+        return el>5
+    }
+)
+console.log(valls1)
+
+let valls2=arr8.filter(
+    function(ele)
+    {
+        return ele>5
+    }
+)
+console.log(valls2)
+
+console.log(colors)
+console.log(colors.sort())
+
+let nms=[1,3,6,8,3,9,2]
+console.log(nms.sort())
+
+let nms1=[5,20,10,75,50,100]
+console.log(nms1.sort())
+
+nms1.sort(
+    function(a,b)
+    {
+        return a-b;
+    }
+)
+</script>
+</body>
+</html>

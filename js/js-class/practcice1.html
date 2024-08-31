@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=/, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*-------------------1.write a program swap the values 0f two variables without using temporary variable--------------
+        let x=90;
+        let y=70;
+        [x,y]=[y,x]
+        document.write(x+"<br>");
+        document.write(y);*/
+
+
+    
+       /* function num(a) {
+            if(a%2==0)
+            {
+            return "even";
+            }
+            else{
+            return "odd";
+            }
+        }
+        document.write(num(4)); */
+        
+        /*---------4. write a program function will print 1 to 100 whenever multiple by 3 it print fizz and multiple by 5 it print 5 and multiple by both 3 and 5 then print fizzbuzz without using functions-----
+        for(let i=1;i<=100;i++)
+    {
+        if(i%3==0 && i%5==0)
+    {
+        document.write("fizzbuzz"+"<br>");
+    }
+    else if(i%3==0)
+    {
+        document.write("fizz"+"<br>")
+    }
+    else if(i%5==0)
+    {
+        document.write("buzz"+"<br>")
+    }
+    else{
+        document.write(" "+i+"<br>")
+    }
+    }*/
+     /*---------4. write a program function will print 1 to 100 whenever multiple by 3 it print fizz and multiple by 5 it print 5 and multiple by both 3 and 5 then print fizzbuzz with using functions-----
+      function siri() {
+     for(let i=1;i<=100;i++)
+    {
+        if(i%3==0 && i%5==0)
+    {
+        document.write("fizzbuzz"+"<br>");
+    }
+    else if(i%3==0)
+    {
+        document.write("fizz"+"<br>")
+    }
+    else if(i%5==0)
+    {
+        document.write("buzz"+"<br>")
+    }
+    else{
+        document.write(" "+i+"<br>")
+    }
+    }
+}siri()*/
+
+/*-------5.print output in the form of template litterals
+           firstname="bahubali"
+           lastname="devasena"
+           age=78    print these variables in template litterals*/
+
+      /* function name(firstname,lastname,age)
+       {
+         document.write(`hello welcome to ${firstname} and ${lastname} and ${age}`)
+       }name("siri","suji",18)
+
+     // let greet="hello welcome to firstname and lastname and age"
+
+      firstname="bahubali"
+      lastname="devasena"
+      age=78 
+      let greet=`hello welcome to ${firstname} and ${lastname} and ${age}`
+      document.write(greet)*/
+/*----------------6.factorial form of output---------------------*/
+
+function fact(num)
+{
+    let result=1;
+    for(let i=1;i<=num;i++)
+{
+    result=result*i;
+}
+return result;
+}
+document.write(fact(4));
+
+/*--------------7.
+
+    </script>
+</body>
+</html>

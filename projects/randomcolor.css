@@ -1,0 +1,42 @@
+body{
+    margin-top: 50px;
+    margin-left: 160px;
+   background-image: url("https://st2.depositphotos.com/3168695/7098/i/450/depositphotos_70980997-stock-photo-green-textured-background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.mainbox{
+   /*height:300px;
+    width: 500px;
+    background-color:aquamarine;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   /* border: 2px solid black;*/
+
+}
+#box{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    background-color: pink;
+    margin: 20px;
+    margin-top: 75px;
+    margin-right: 220px;
+}
+#button{
+    /*padding: 10px 20px;*/
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 200px;
+    /*margin-top: 20px;*/
+
+}
+p{
+    font-size: 18px;
+    margin-top:10px;
+    margin-right: 210px;
+
+}

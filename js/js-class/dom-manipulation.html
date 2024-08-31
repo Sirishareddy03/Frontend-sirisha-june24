@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="one">
+        <p id="para">I am paragraph</p>
+        <h2 id="last">welcome to dom manipulation</h2>
+    </div>
+    <img id="img"src="https://img.freepik.com/free-photo/colorful-design-with-spiral-design_188544-9588.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1722816000&semt=sph" height="130px" width="150px">
+    <script>
+        var newele=document.createElement("h4")
+        console.log(newele)
+        newele.innerText="i am the head of this page"
+        var currdiv=document.getElementById("one")
+        var lastele=document.getElementById("last")
+     // currdiv.appendChild(newele)
+    //currdiv.insertBefore(newele,lastele)
+      // currdiv.replaceChild(newele,lastele)
+       //last.remove()
+      // console.log(currdiv.getAttribute("id"))
+      var img=document.getElementById("img")
+    //  console.log(img.getAttribute("src"))
+      img.setAttribute("src","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREoRGyXmHy_6aIgXYqWHdOT3KjfmnuSyxypw&s")
+    </script>
+</body>
+</html>
